@@ -4,6 +4,11 @@
     font-family: 'Concert One', cursive;
 }
 
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+
 a{
     text-decoration: none;
 }
@@ -49,6 +54,7 @@ a{
     font-size: 25px;
     font-weight: 900;
     color: darkorange;
+    cursor: pointer;
 }
 
 .logo-text span{
@@ -93,10 +99,33 @@ a{
 #gaming-images{
     position: relative;
     height: 100vh;
-    background: url(./images/slider-1.jpg.webp);
     background-position: center;
     background-size: cover;
     padding: 0 200px;
+    animation: slider 30s infinite;
+    animation-direction: normal;
+    
+}
+
+/* ANIMATION */
+
+@keyframes slider {
+    0%{
+        background: url(./images/slider-1.jpg.webp);
+    }
+    25%{
+        background: url(./images/bg2.jpg);
+    }
+    50%{
+        background: url(./images/bg-3.png);
+    }
+    75%{
+        background: url(./images/bg-4.jpg);
+       
+    }
+    100%{
+        background: url(./images/bg-5.jpg);
+    }
 }
 
 .gaming-text{
@@ -115,6 +144,31 @@ a{
 .gaming-text span{
     color: darkorange;
 }
+
+/* .arrow{
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    background-color: #00000070;
+    color: darkorange;
+    border-radius: 50%;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top:50%;
+    cursor: pointer;
+}
+
+.left{
+    left: 25px;
+}
+
+.right{
+    right:25px
+} */
+
+
+
 
 /* LATEST NEWS SECTION2 */
 
@@ -503,4 +557,57 @@ a{
 #last{
     background: url(./images/premuim-tournaments-bg.webp);
     height: 100vh;
+    display: flex;
+    padding: 80px 120px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.last-col{
+    background-color: #272727;
+    width: 350px;
+    padding: 25px;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+}
+
+.last-col h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #000;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.social-links .fab{
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.social-links .fab:hover{
+    color: darkorange;
+}
+
+.home{
+    top: 84%;
+    left: 4%;
+    position: fixed;
+}
+
+.home .fas{
+    font-size: 40px;
+    color: darkorange;
+    background-color: #000;
+    border-radius: 50%;
 }

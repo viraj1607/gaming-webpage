@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./images/logo.png" sizes="50px">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Gaming World</title>
 </head>
 <body>
@@ -35,7 +36,9 @@
     </header>
     <main>
         <section id="gaming-images">
-            <div class="gaming-text">
+            <!-- <div class="arrow left" onclick=changeLeft() ><i class="fas fa-chevron-left"></i></div>
+            <div class="arrow right" onclick=changeRight()><i class="fas fa-chevron-right"></i></div> -->
+            <div class="gaming-text" data-aos="fade-right"> 
                 <h1>The Best <span>Game</span> Out There</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuadalorem <br> maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. <br> Suspendisse cursus faucibus finibus.</p>
                 <a href="" class="btn">Read More</a>
@@ -67,7 +70,7 @@
             </div>
         </section>
         <section id="game-genre-boxes">
-            <div class="genre-boxes">
+            <div class="genre-boxes" data-aos="fade-down">
                 <div class="genre new-bg ">
                     <div class="grid-boxes-text">
                         <span class="badge new">NEW</span>
@@ -98,10 +101,10 @@
                 </div>
             </div>
         </section>
-        <section id="recent-games">
+        <section id="recent-games" data-aos="fade-left">
             <h2>Recent Games</h2>
             <div class="line"></div>
-            <div class="recent-games-container">
+            <div class="recent-games-container" data-aos="fade-right">
                 <div class="recent-game">
                     <div class="recent-actionbg">
                         <span class="badge action">ACTION</span>
@@ -147,7 +150,7 @@
             <h2>Premuim Tournaments</h2>
             <div class="line"></div>
             <div class="premuim-tournaments">
-                <div class="tournament">
+                <div class="tournament" data-aos="fade-right">
                     <div class="tournament-img">
                         <img src="./images/imp-tmnt-1.webp" alt="">
                     </div>
@@ -162,7 +165,7 @@
                     </div>
                     
                 </div>
-                <div class="tournament">
+                <div class="tournament" data-aos="fade-left">
                     <div class="tournament-img">
                         <img src="./images/imp-tmnt-2.webp" alt="">
                     </div>
@@ -178,10 +181,10 @@
                 </div>
             </div>
         </section>
-        <section id="reviews">
+        <section id="reviews" data-aos="fade-left">
             <h2>Game Reviews</h2>
             <div class="line"></div>
-            <div class="review-games-container">
+            <div class="review-games-container" data-aos="fade-right">
                 <div class="review-game">
                     <div class="review-actionbg">
                         <span class="rating action">8.9</span>
@@ -221,8 +224,39 @@
             </div>
         </section>
         <section id="last">
-            <img src="./images/3d.webp" alt="">
+            <div class="image_3d" data-aos="fade-down">
+                <img src="./images/3d.webp" alt="">
+            </div>
+            <div class="last-col posts" data-aos="fade-up">
+                <h3>Latest Posts</h3>
+                <div class="line"></div>
+            </div>
+            <div class="last-col comments" data-aos="fade-up">
+                <h3>Top Comments</h3>
+                <div class="line"></div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="copyright">
+            Copyright ©2021 All rights reserved
+        </div>
+        <div class="logo-text">
+            <span>GAMING</span> WORLD
+        </div>
+        <div class="social-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </footer>
+    <div class="home"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></div>
+    <script src="./script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
 </body>
 </html>
